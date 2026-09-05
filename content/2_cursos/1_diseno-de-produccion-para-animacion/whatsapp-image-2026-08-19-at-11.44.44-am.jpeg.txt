@@ -1,0 +1,5 @@
+Uuid: bcehvi1gfh6efeq7
+
+----
+
+Template: images

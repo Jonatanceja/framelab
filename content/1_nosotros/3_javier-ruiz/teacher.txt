@@ -1,0 +1,76 @@
+Title: Javier Ruiz
+
+----
+
+Role: Technical Director
+
+----
+
+Tagline: Construye los sistemas de rigging y las herramientas que sostienen una producción completa.
+
+----
+
+Card: foto
+
+----
+
+Badge:
+
+----
+
+Photo:
+
+----
+
+Photovideo:
+
+----
+
+Bio: Javier Ruiz es director técnico. Diseña los sistemas de rigging, las herramientas internas y los flujos de trabajo que permiten que un equipo de animación produzca con orden y a tiempo.
+
+----
+
+Skills:
+
+- 
+  text: Rigging
+- 
+  text: Pipeline
+- 
+  text: Herramientas de producción
+
+----
+
+Projectstitle: Proyectos destacados
+
+----
+
+Projects:
+
+----
+
+Metatitle: Javier Ruiz — Mentor en Frame Lab
+
+----
+
+Metadescription: Director técnico especializado en rigging, pipeline y herramientas de producción para animación. Mentor en Frame Lab.
+
+----
+
+Ogtitle:
+
+----
+
+Ogdescription:
+
+----
+
+Ogimage:
+
+----
+
+Noindex: false
+
+----
+
+Uuid: mentorJavierRuiz01

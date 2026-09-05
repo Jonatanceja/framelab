@@ -1,0 +1,202 @@
+title: Frame Lab
+
+tabs:
+  # ------------------------------------------------------------------
+  # Páginas
+  # ------------------------------------------------------------------
+  pages:
+    label:
+      es: Páginas
+      en: Pages
+    icon: dashboard
+    sections:
+      pagesPages:
+        headline: Páginas
+        type: pages
+
+  # ------------------------------------------------------------------
+  # Navegación
+  # ------------------------------------------------------------------
+  navigation:
+    label:
+      es: Navegación
+      en: Navigation
+    icon: menu
+    columns:
+      main:
+        width: 2/3
+        sections:
+          navigationFields:
+            type: fields
+            fields:
+              menu:
+                label: Menú principal
+                type: structure
+                empty: Sin enlaces
+                columns:
+                  label: true
+                  link: true
+                fields:
+                  label:
+                    label: Etiqueta
+                    type: text
+                    width: 1/2
+                  link:
+                    label: Enlace
+                    type: text
+                    width: 1/2
+                    help: "#ancla, /pagina o URL"
+              navCtaLabel:
+                label: Botón del menú
+                type: text
+                width: 1/2
+              navCtaLink:
+                label: Enlace del botón
+                type: text
+                width: 1/2
+
+  # ------------------------------------------------------------------
+  # SEO del sitio
+  # ------------------------------------------------------------------
+  seo:
+    label: SEO
+    icon: search
+    columns:
+      main:
+        width: 2/3
+        sections:
+          seoFields:
+            type: fields
+            fields:
+              seoInfo:
+                label: Valores por defecto
+                type: info
+                text: Se usan en cualquier página que no tenga su propia descripción o imagen en su pestaña SEO.
+              siteDescription:
+                label: Descripción del sitio
+                type: textarea
+                size: small
+                buttons: false
+                maxlength: 160
+              siteLocale:
+                label: Idioma (Open Graph)
+                type: text
+                width: 1/2
+                help: "Ej. es_MX"
+              twitterSite:
+                label: Cuenta de X
+                type: text
+                width: 1/2
+                help: "Con arroba. Ej. @framelab"
+      sidebar:
+        width: 1/3
+        sections:
+          seoSidebarFields:
+            type: fields
+            fields:
+              ogImage:
+                label: Imagen por defecto para redes
+                type: files
+                multiple: false
+                layout: cards
+                uploads: images
+                help: 1200 × 630 px.
+
+  # ------------------------------------------------------------------
+  # Pie de página
+  # ------------------------------------------------------------------
+  footer:
+    label:
+      es: Pie de página
+      en: Footer
+    icon: text
+    columns:
+      main:
+        width: 2/3
+        sections:
+          footerFields:
+            type: fields
+            fields:
+              footerTagline:
+                label: Tagline
+                type: text
+                width: 1/2
+              footerCopyright:
+                label: Copyright
+                type: text
+                width: 1/2
+              footerColumns:
+                label: Columnas de contacto
+                type: structure
+                empty: Sin columnas
+                columns:
+                  headline: true
+                  email: true
+                fields:
+                  headline:
+                    label: Título
+                    type: text
+                    width: 1/2
+                  email:
+                    label: Correo
+                    type: email
+                    width: 1/2
+              footerLegal:
+                label: Enlaces legales
+                type: structure
+                empty: Sin enlaces
+                fields:
+                  label:
+                    label: Etiqueta
+                    type: text
+                    width: 1/2
+                  link:
+                    label: Enlace
+                    type: text
+                    width: 1/2
+
+              footerBottomHeadline:
+                type: headline
+                label: Barra inferior
+              creditLabel:
+                label: Crédito
+                type: text
+                width: 1/3
+                help: "Ej. Diseño y desarrollo por"
+              creditName:
+                label: Estudio
+                type: text
+                width: 1/3
+              creditLink:
+                label: Enlace del estudio
+                type: url
+                width: 1/3
+      sidebar:
+        width: 1/3
+        sections:
+          footerSidebarFields:
+            type: fields
+            fields:
+              email:
+                label: Correo principal
+                type: email
+              social:
+                label: Redes sociales
+                type: structure
+                empty: Sin redes
+                fields:
+                  platform:
+                    label: Red
+                    type: select
+                    options:
+                      instagram: Instagram
+                      youtube: YouTube
+                      tiktok: TikTok
+                      linkedin: LinkedIn
+                      x: X
+                  link:
+                    label: Enlace
+                    type: url
+          footerFiles:
+            type: files
+            label: Archivos del sitio

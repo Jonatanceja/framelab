@@ -1,0 +1,5 @@
+Uuid: mtis9igekeydx6jn
+
+----
+
+Template: images

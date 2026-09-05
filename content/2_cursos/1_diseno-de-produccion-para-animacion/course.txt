@@ -1,0 +1,207 @@
+Title: Diseño de Producción para Animación
+
+----
+
+Badge: Bootcamp intensivo
+
+----
+
+Herotitle: Diseño de Producción
+
+----
+
+Herotitleaccent: para Animación
+
+----
+
+Tagline: Construye el mundo detrás de una historia.
+
+----
+
+Duration: 15 horas (3 sesiones de 5 horas)
+
+----
+
+Schedule: Tres sábados seguidos (fechas por definir)
+
+----
+
+Primarylabel: Inscríbete ahora
+
+----
+
+Primarylink: "#inscripcion"
+
+----
+
+Secondarylabel: Descargar temario
+
+----
+
+Syllabusfile: - file://hrg0ijgtckbipmrk
+
+----
+
+Cardimage: - file://bcehvi1gfh6efeq7
+
+----
+
+Cardvideo: 
+
+----
+
+Goaltitle: Objetivo del
+
+----
+
+Goaltitleaccent: Bootcamp
+
+----
+
+Goaltext: Aprender el proceso de Diseño de Producción para desarrollar la identidad visual de un proyecto de animación, desde el análisis del guion hasta la presentación de una propuesta de producción.
+
+----
+
+Syllabustitle: Temario detallado (3 sesiones)
+
+----
+
+Syllabustext: El programa te lleva desde los fundamentos hasta las técnicas que se usan en producciones profesionales.
+
+----
+
+Sessions:
+
+- 
+  title: 'Sesión 1: Del guion al universo visual'
+  duration: 5 horas
+  icon: guion
+  highlight: 'false'
+  topics:
+    - 
+      text: Introducción al Diseño de Producción
+    - 
+      text: Análisis del guion
+    - 
+      text: >
+        Construcción del universo (concepto,
+        moodboard, lenguaje)
+    - 
+      text: >
+        Diseño de escenarios (world building,
+        color script, layout)
+  text: ""
+- 
+  title: 'Sesión 2: Del diseño a la producción'
+  duration: 5 horas
+  icon: pincel
+  highlight: 'true'
+  topics:
+    - 
+      text: Diseño de personajes y props
+    - 
+      text: Breakdown de producción
+    - 
+      text: Iluminación para animación digital
+    - 
+      text: Presentación profesional (pitch visual)
+  text: ""
+- 
+  title: 'Sesión 3: Greenlight meeting'
+  duration: 5 horas
+  icon: presentacion
+  highlight: 'false'
+  topics: [ ]
+  text: >
+    Cada alumno presenta su proyecto como si
+    estuviera frente a un estudio o un
+    comité de financiamiento.
+
+----
+
+Deliverablestitle: Entregables del proyecto
+
+----
+
+Deliverableslist:
+
+- 
+  text: Moodboard
+- 
+  text: Concepto visual
+- 
+  text: Diseño del personaje principal
+- 
+  text: Diseño del escenario principal
+- 
+  text: Paleta de color
+- 
+  text: Pitch visual del proyecto
+
+----
+
+Instructor: page://mentorSrNino000001
+
+----
+
+Instructorbadge: Instructor principal
+
+----
+
+Instructorlinklabel: Ver ficha
+
+----
+
+Instructorprojectslabel: Proyectos destacados
+
+----
+
+Ctatitle: ¿Listo para dar el salto?
+
+----
+
+Ctatext: Las plazas son limitadas para garantizar una atención personalizada. Asegura tu lugar en la próxima cohorte.
+
+----
+
+Ctabutton: Inscribirse al bootcamp
+
+----
+
+Ctalink: mailto:inscripciones@framelab.mx
+
+----
+
+Ctaimage: 
+
+----
+
+Ctavideo: 
+
+----
+
+Metatitle: Bootcamp de Diseño de Producción para Animación
+
+----
+
+Metadescription: 15 horas intensivas para construir la identidad visual de un proyecto de animación, del análisis del guion al pitch visual. Con Ricardo "Sr. Niño" Mora.
+
+----
+
+Ogtitle: 
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Noindex: false
+
+----
+
+Uuid: cursoDisenoProduccion1

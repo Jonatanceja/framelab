@@ -1,0 +1,86 @@
+title: Cursos
+icon: video
+
+options:
+  changeTemplate: false
+
+tabs:
+  # ------------------------------------------------------------------
+  # Portada
+  # ------------------------------------------------------------------
+  intro:
+    label:
+      es: Portada
+      en: Intro
+    icon: text
+    columns:
+      main:
+        width: 2/3
+        sections:
+          introFields:
+            type: fields
+            fields:
+              introBadge:
+                label: Etiqueta
+                type: text
+              introTitle:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              introTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              introText:
+                label: Texto
+                type: textarea
+                size: small
+                buttons: false
+      sidebar:
+        width: 1/3
+        sections:
+          introSidebarFields:
+            type: fields
+            fields:
+              introImage:
+                label: Imagen de fondo
+                type: files
+                multiple: false
+                layout: cards
+                uploads: images
+              introVideo:
+                label: Video (opcional)
+                type: files
+                multiple: false
+                layout: list
+                query: page.files.filterBy("type", "video")
+                help: MP4 o WebM en mute y en bucle. Si hay video sustituye a la imagen (la imagen queda como póster).
+
+  # ------------------------------------------------------------------
+  # Cursos
+  # ------------------------------------------------------------------
+  courses:
+    label:
+      es: Cursos
+      en: Courses
+    icon: bars
+    sections:
+      coursesCourses:
+        headline: Cursos
+        type: pages
+        template: course
+        create: course
+        layout: cards
+        image:
+          query: page.cardImage.toFile
+          back: black
+        info: "{{ page.duration }}"
+        empty: Todavía no hay cursos
+
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  seo:
+    extends: tabs/seo

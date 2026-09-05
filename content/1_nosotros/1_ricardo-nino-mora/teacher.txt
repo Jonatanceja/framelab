@@ -1,0 +1,105 @@
+Title: Ricardo Niño Mora (Sr. Niño)
+
+----
+
+Role: Director de Arte y Diseñador de Producción
+
+----
+
+Tagline: Especialista en animación 3D de personajes, con más de 10 años de experiencia en largometrajes internacionales.
+
+----
+
+Card: destacado
+
+----
+
+Badge: Lead Animator
+
+----
+
+Photo: - file://mttc7a1dvednp9nt
+
+----
+
+Photovideo: 
+
+----
+
+Bio:
+
+Ricardo Niño Mora, conocido como **Sr. Niño**, es director de arte y diseñador de producción con más de 15 años convirtiendo ideas en mundos, personajes y universos visuales. Su trabajo se mueve entre la animación 2D, 3D, CGI y stop motion, pasando por cine, videojuegos, ilustración, comerciales y hasta la conceptualización de parques temáticos.
+
+A lo largo de su carrera ha participado en más de 20 cortometrajes, series animadas y siete largometrajes, aportando su experiencia en diseño de producción, dirección de arte, desarrollo visual y arte conceptual. Entre sus proyectos destacan "Lluvia en los ojos", "El Secreto del Medallón de Jade", "Ana", "Día de Muertos" y "Bem: Un Lémur en Fuga", donde estuvo a cargo del diseño de producción. También ha cruzado fronteras, colaborando en proyectos para bandas internacionales como Korn e In Flames.
+
+Más que diseñar escenarios, Sr. Niño se especializa en darle identidad visual a una historia: imaginar cómo se ve un mundo, definir su lenguaje y convertir una idea en algo que el público pueda ver, sentir y recordar.
+
+----
+
+Skills:
+
+- 
+  text: Animación 2D
+- 
+  text: '3D & CGI'
+- 
+  text: Stop Motion
+- 
+  text: Diseño de Producción
+
+----
+
+Projectstitle: Proyectos destacados
+
+----
+
+Projects:
+
+- 
+  title: Lluvia en los ojos
+  detail: Diseño de producción
+  link: ""
+- 
+  title: El Secreto del Medallón de Jade
+  detail: Diseño de producción
+  link: ""
+- 
+  title: Ana
+  detail: Diseño de producción
+  link: ""
+- 
+  title: Día de Muertos
+  detail: Diseño de producción
+  link: ""
+- 
+  title: 'Bem: Un Lémur en Fuga'
+  detail: Diseño de producción
+  link: ""
+
+----
+
+Metatitle: Ricardo "Sr. Niño" Mora — Mentor en Frame Lab
+
+----
+
+Metadescription: Director de arte y diseñador de producción con más de 15 años en animación 2D, 3D, CGI y stop motion. Mentor del bootcamp de Diseño de Producción en Frame Lab.
+
+----
+
+Ogtitle: 
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Noindex: false
+
+----
+
+Uuid: mentorSrNino000001

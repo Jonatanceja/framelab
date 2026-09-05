@@ -1,0 +1,237 @@
+Title: Inicio
+
+----
+
+Herobadge: Bootcamp de Animación & Tech
+
+----
+
+Herotitleaccent: Aprende Animación
+
+----
+
+Herotitlerest: desde Cero
+
+----
+
+Herotext: 15 horas intensivas para dominar el Diseño de Producción. Aprende de artistas en activo y construye el mundo que hay detrás de una historia.
+
+----
+
+Heroprimarylabel: Ver bootcamp
+
+----
+
+Heroprimarylink: #bootcamp
+
+----
+
+Herosecondarylabel: Ver currículum
+
+----
+
+Herosecondarylink: #cursos
+
+----
+
+Herostats:
+
+- 
+  value: '100%'
+  label: En línea
+- 
+  value: "0"
+  label: Experiencia previa
+- 
+  value: +IA
+  label: Integrada al flujo
+- 
+  value: 6-9
+  label: Meses de formación
+
+----
+
+Heroimage: 
+
+----
+
+Herovideo: - file://3tspjjlhg2yqzj45
+
+----
+
+Abouttitle: Aprende
+
+----
+
+Abouttitleaccent: creando
+
+----
+
+Abouttext: Formamos a la próxima generación de artistas digitales y animadores de Latinoamérica con educación accesible, práctica y de nivel internacional. Cada clase termina en algo que puedes mostrar: una pieza real, hecha por ti, revisada por alguien que trabaja en la industria.
+
+----
+
+Aboutlisttitle: ¿Por qué Frame Lab?
+
+----
+
+Aboutlist:
+
+- 
+  text: >
+    Mentores activos en la industria de la
+    animación.
+- 
+  text: >
+    Proyectos reales que se quedan en tu
+    portafolio.
+- 
+  text: >
+    Grupos reducidos y asesoría
+    personalizada de carrera.
+- 
+  text: >
+    Herramientas de IA integradas al flujo
+    de producción.
+
+----
+
+Aboutimage: - file://ki7xwzsfriizx5jd
+
+----
+
+Aboutvideo: 
+
+----
+
+Bootcampeyebrow: Programa destacado
+
+----
+
+Bootcamptitle: Bootcamp de Animación Pro
+
+----
+
+Bootcamptext: Un programa inmersivo diseñado para llevarte de principiante a profesional listo para la industria en tiempo récord.
+
+----
+
+Bootcampbuttonlabel: Inscríbete ahora
+
+----
+
+Bootcampbuttonlink: "#suscribete"
+
+----
+
+Bootcampimage: 
+
+----
+
+Bootcampvideo: - file://almilszq1ojrfvor
+
+----
+
+Coursestitle: Nuestros
+
+----
+
+Coursestitleaccent: Cursos
+
+----
+
+Coursestext: Programas intensivos diseñados con expertos de la industria para llevarte del primer boceto a tu primer empleo.
+
+----
+
+Courseslist:
+
+- page://cursoDisenoProduccion1
+
+----
+
+Testimonialsvisible: true
+
+----
+
+Testimonialstitle: Lo que dicen
+
+----
+
+Testimonialstitleaccent: nuestros alumnos
+
+----
+
+Testimonialslist:
+
+- 
+  quote: >
+    Frame Lab me dio las herramientas
+    prácticas que necesitaba para conseguir
+    mi primer trabajo en un estudio de
+    animación AAA.
+  author: Sofía M.
+  role: Generación 2024
+- 
+  quote: >
+    Los mentores son increíbles y el
+    ambiente de la comunidad te impulsa a
+    mejorar todos los días.
+  author: Diego L.
+  role: Generación 2024
+
+----
+
+Ctatitle: ¿Listo para empezar?
+
+----
+
+Ctatext: Suscríbete y recibe noticias, recursos gratuitos y las fechas de nuestros próximos bootcamps.
+
+----
+
+Ctaplaceholder: Tu correo electrónico
+
+----
+
+Ctabutton: Suscribirme
+
+----
+
+Ctasuccess: ¡Listo! Revisa tu correo para confirmar la suscripción.
+
+----
+
+Ctanote: Sin spam. Puedes darte de baja cuando quieras.
+
+----
+
+Subscribers: 
+
+----
+
+Metatitle: Frame Lab — Escuela de Animación en línea
+
+----
+
+Metadescription: Bootcamps intensivos de animación, diseño de producción y personajes. Aprende con mentores activos en la industria y construye un portafolio real.
+
+----
+
+Ogtitle: 
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Noindex: false
+
+----
+
+Uuid: sm3xEhovFJsimsbQ

@@ -1,0 +1,398 @@
+title: Inicio
+icon: home
+
+options:
+  changeSlug: false
+  changeTemplate: false
+  delete: false
+
+tabs:
+  # ------------------------------------------------------------------
+  # Hero
+  # ------------------------------------------------------------------
+  hero:
+    label:
+      es: Hero
+      en: Hero
+    icon: layers
+    columns:
+      main:
+        width: 2/3
+        sections:
+          heroFields:
+            type: fields
+            fields:
+              heroBadge:
+                label: Etiqueta
+                type: text
+                icon: bolt
+                help: Píldora pequeña arriba del título.
+              heroLine:
+                type: line
+              heroTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              heroTitleRest:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              heroText:
+                label: Descripción
+                type: textarea
+                size: small
+                buttons: false
+              heroButtonsHeadline:
+                type: headline
+                label: Botones
+              heroPrimaryLabel:
+                label: Botón principal
+                type: text
+                width: 1/2
+              heroPrimaryLink:
+                label: Enlace
+                type: text
+                width: 1/2
+                help: "#bootcamp, /cursos o una URL"
+              heroSecondaryLabel:
+                label: Botón secundario
+                type: text
+                width: 1/2
+              heroSecondaryLink:
+                label: Enlace
+                type: text
+                width: 1/2
+              heroStatsHeadline:
+                type: headline
+                label: Datos rápidos
+              heroStats:
+                label: Datos
+                type: structure
+                empty: Sin datos
+                fields:
+                  value:
+                    label: Valor
+                    type: text
+                    width: 1/2
+                  label:
+                    label: Etiqueta
+                    type: text
+                    width: 1/2
+      sidebar:
+        width: 1/3
+        sections:
+          heroSidebarFields:
+            type: fields
+            fields:
+              heroImage:
+                label: Imagen de fondo
+                type: files
+                multiple: false
+                layout: cards
+                uploads: images
+                help: Formato horizontal, mínimo 2000px de ancho.
+              heroVideo:
+                label: Video (opcional)
+                type: files
+                multiple: false
+                layout: list
+                query: page.files.filterBy("type", "video")
+                help: MP4 o WebM en mute y en bucle. Si hay video sustituye a la imagen (la imagen queda como póster).
+
+  # ------------------------------------------------------------------
+  # Nosotros
+  # ------------------------------------------------------------------
+  about:
+    label:
+      es: Nosotros
+      en: About
+    icon: users
+    columns:
+      main:
+        width: 2/3
+        sections:
+          aboutFields:
+            type: fields
+            fields:
+              aboutTitle:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              aboutTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              aboutText:
+                label: Texto
+                type: textarea
+                size: small
+                buttons: false
+              aboutListTitle:
+                label: Título de la lista
+                type: text
+              aboutList:
+                label: Puntos clave
+                type: structure
+                empty: Sin puntos
+                fields:
+                  text:
+                    label: Texto
+                    type: text
+      sidebar:
+        width: 1/3
+        sections:
+          aboutSidebarFields:
+            type: fields
+            fields:
+              aboutImage:
+                label: Imagen
+                type: files
+                multiple: false
+                layout: cards
+                uploads: images
+              aboutVideo:
+                label: Video (opcional)
+                type: files
+                multiple: false
+                layout: list
+                query: page.files.filterBy("type", "video")
+                help: MP4 o WebM en mute y en bucle. Si hay video sustituye a la imagen.
+
+  # ------------------------------------------------------------------
+  # Bootcamp destacado
+  # ------------------------------------------------------------------
+  bootcamp:
+    label:
+      es: Bootcamp
+      en: Bootcamp
+    icon: star
+    columns:
+      main:
+        width: 2/3
+        sections:
+          bootcampFields:
+            type: fields
+            fields:
+              bootcampEyebrow:
+                label: Etiqueta
+                type: text
+              bootcampTitle:
+                label: Título
+                type: text
+              bootcampText:
+                label: Texto
+                type: textarea
+                size: small
+                buttons: false
+              bootcampButtonLabel:
+                label: Botón
+                type: text
+                width: 1/2
+              bootcampButtonLink:
+                label: Enlace
+                type: text
+                width: 1/2
+      sidebar:
+        width: 1/3
+        sections:
+          bootcampSidebarFields:
+            type: fields
+            fields:
+              bootcampImage:
+                label: Imagen de fondo
+                type: files
+                multiple: false
+                layout: cards
+                uploads: images
+              bootcampVideo:
+                label: Video (opcional)
+                type: files
+                multiple: false
+                layout: list
+                query: page.files.filterBy("type", "video")
+                help: MP4 o WebM en mute y en bucle. Si hay video sustituye a la imagen (la imagen queda como póster).
+
+  # ------------------------------------------------------------------
+  # Cursos
+  # ------------------------------------------------------------------
+  courses:
+    label:
+      es: Cursos
+      en: Courses
+    icon: video
+    columns:
+      main:
+        width: 1/1
+        sections:
+          coursesIntro:
+            type: fields
+            fields:
+              coursesTitle:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              coursesTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              coursesText:
+                label: Introducción
+                type: textarea
+                size: small
+                buttons: false
+              coursesList:
+                label: Cursos a mostrar
+                type: pages
+                multiple: true
+                max: 3
+                layout: cards
+                query: site.find("cursos").children.listed
+                image:
+                  query: page.cardImage.toFile
+                  back: black
+                info: "{{ page.duration }}"
+                empty: Todavía no has elegido cursos
+                help: Elige hasta 3 cursos de la página Cursos. Si lo dejas vacío se muestran los primeros 3.
+  # ------------------------------------------------------------------
+  # Testimonios
+  # ------------------------------------------------------------------
+  testimonials:
+    label:
+      es: Testimonios
+      en: Testimonials
+    icon: heart
+    columns:
+      main:
+        width: 1/1
+        sections:
+          testimonialsFields:
+            type: fields
+            fields:
+              testimonialsVisible:
+                label: Mostrar la sección
+                type: toggle
+                default: true
+                text:
+                  - Oculta
+                  - Visible
+                help: Apágala para quitar los testimonios del inicio sin borrarlos.
+              testimonialsTitle:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              testimonialsTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              testimonialsList:
+                label: Testimonios
+                type: structure
+                empty: Sin testimonios
+                columns:
+                  author: true
+                  quote: true
+                fields:
+                  quote:
+                    label: Testimonio
+                    type: textarea
+                    size: small
+                    buttons: false
+                  author:
+                    label: Autor
+                    type: text
+                    width: 1/2
+                  role:
+                    label: Detalle
+                    type: text
+                    width: 1/2
+                    help: "Ej. Generación 2024"
+
+  # ------------------------------------------------------------------
+  # Suscripción
+  # ------------------------------------------------------------------
+  cta:
+    label:
+      es: Suscripción
+      en: Newsletter
+    icon: email
+    columns:
+      main:
+        width: 2/3
+        sections:
+          ctaFields:
+            type: fields
+            fields:
+              ctaTitle:
+                label: Título
+                type: text
+              ctaText:
+                label: Texto
+                type: textarea
+                size: small
+                buttons: false
+              ctaPlaceholder:
+                label: Placeholder del campo
+                type: text
+                width: 1/2
+              ctaButton:
+                label: Botón
+                type: text
+                width: 1/2
+              ctaSuccess:
+                label: Mensaje de éxito
+                type: text
+      sidebar:
+        width: 1/3
+        sections:
+          ctaSidebarFields:
+            type: fields
+            fields:
+              ctaNote:
+                label: Nota legal
+                type: text
+                help: Texto pequeño debajo del formulario.
+
+  # ------------------------------------------------------------------
+  # Suscriptores
+  # ------------------------------------------------------------------
+  subscribers:
+    label:
+      es: Suscriptores
+      en: Subscribers
+    icon: users
+    columns:
+      main:
+        width: 1/1
+        sections:
+          subscribersSubscribers:
+            type: fields
+            fields:
+              subscribersInfo:
+                label: Suscriptores al newsletter
+                type: info
+                text: Cada alta desde el formulario del home se guarda aquí. Exporta o borra los registros cuando conectes un proveedor de correo.
+              subscribers:
+                label: Suscriptores
+                type: structure
+                empty: Todavía no hay suscriptores
+                sortable: false
+                columns:
+                  date: true
+                  email: true
+                fields:
+                  date:
+                    label: Fecha
+                    type: text
+                    width: 1/2
+                  email:
+                    label: Correo
+                    type: email
+                    width: 1/2
+
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  seo:
+    extends: tabs/seo

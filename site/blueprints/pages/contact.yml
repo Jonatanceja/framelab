@@ -1,0 +1,232 @@
+title: Contacto
+icon: email
+
+options:
+  changeTemplate: false
+
+tabs:
+  # ------------------------------------------------------------------
+  # Portada
+  # ------------------------------------------------------------------
+  intro:
+    label:
+      es: Portada
+      en: Intro
+    icon: text
+    columns:
+      main:
+        width: 2/3
+        sections:
+          introFields:
+            type: fields
+            fields:
+              introTitle:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              introTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              introText:
+                label: Texto
+                type: textarea
+                size: small
+                buttons: false
+              contactHeadline:
+                type: headline
+                label: Datos de contacto
+              emails:
+                label: Correos
+                type: structure
+                empty: Sin correos
+                columns:
+                  label: true
+                  address: true
+                fields:
+                  label:
+                    label: Para qué
+                    type: text
+                    width: 1/2
+                    help: "Ej. Inscripciones"
+                  address:
+                    label: Correo
+                    type: email
+                    width: 1/2
+              phone:
+                label: Teléfono
+                type: tel
+                width: 1/2
+                help: Opcional.
+              locationLabel:
+                label: Etiqueta de ubicación
+                type: text
+                width: 1/2
+              location:
+                label: Ubicación
+                type: textarea
+                size: small
+                buttons: false
+                width: 1/2
+
+  # ------------------------------------------------------------------
+  # Formulario
+  # ------------------------------------------------------------------
+  form:
+    label:
+      es: Formulario
+      en: Form
+    icon: menu
+    columns:
+      main:
+        width: 2/3
+        sections:
+          formFields:
+            type: fields
+            fields:
+              nameLabel:
+                label: Etiqueta del nombre
+                type: text
+                width: 1/2
+              namePlaceholder:
+                label: Placeholder
+                type: text
+                width: 1/2
+              emailLabel:
+                label: Etiqueta del correo
+                type: text
+                width: 1/2
+              emailPlaceholder:
+                label: Placeholder
+                type: text
+                width: 1/2
+              courseLabel:
+                label: Etiqueta del curso
+                type: text
+                width: 1/2
+              coursePlaceholder:
+                label: Opción vacía
+                type: text
+                width: 1/2
+                help: Se muestra como primera opción del menú.
+              messageLabel:
+                label: Etiqueta del mensaje
+                type: text
+                width: 1/2
+              messagePlaceholder:
+                label: Placeholder
+                type: text
+                width: 1/2
+              submitLabel:
+                label: Botón
+                type: text
+                width: 1/2
+              successMessage:
+                label: Mensaje de éxito
+                type: text
+                width: 1/2
+              formNote:
+                label: Nota legal
+                type: text
+
+  # ------------------------------------------------------------------
+  # Preguntas frecuentes
+  # ------------------------------------------------------------------
+  faq:
+    label:
+      es: Preguntas frecuentes
+      en: FAQ
+    icon: question
+    columns:
+      main:
+        width: 1/1
+        sections:
+          faqFields:
+            type: fields
+            fields:
+              faqTitle:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              faqTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              faqText:
+                label: Introducción
+                type: text
+              faqList:
+                label: Preguntas
+                type: structure
+                empty: Sin preguntas
+                columns:
+                  question: true
+                fields:
+                  question:
+                    label: Pregunta
+                    type: text
+                  answer:
+                    label: Respuesta
+                    type: textarea
+                    size: small
+                    buttons: false
+
+  # ------------------------------------------------------------------
+  # Mensajes recibidos
+  # ------------------------------------------------------------------
+  messages:
+    label:
+      es: Mensajes
+      en: Messages
+    icon: bell
+    columns:
+      main:
+        width: 1/1
+        sections:
+          messagesMessages:
+            type: fields
+            fields:
+              messagesInfo:
+                label: Mensajes recibidos
+                type: info
+                text: Cada envío del formulario se guarda aquí. Puedes borrar los que ya atendiste.
+              messages:
+                label: Mensajes
+                type: structure
+                empty: Todavía no hay mensajes
+                sortable: false
+                columns:
+                  date: true
+                  name: true
+                  email: true
+                  course: true
+                fields:
+                  date:
+                    label: Fecha
+                    type: text
+                    width: 1/4
+                  name:
+                    label: Nombre
+                    type: text
+                    width: 1/4
+                  email:
+                    label: Correo
+                    type: email
+                    width: 1/4
+                  course:
+                    label: Curso de interés
+                    type: text
+                    width: 1/4
+                  message:
+                    label: Mensaje
+                    type: textarea
+                    size: small
+                    buttons: false
+
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  seo:
+    extends: tabs/seo

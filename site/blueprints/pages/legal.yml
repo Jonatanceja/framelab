@@ -1,0 +1,74 @@
+title: Página legal
+icon: file-document
+
+tabs:
+  # ------------------------------------------------------------------
+  # Contenido
+  # ------------------------------------------------------------------
+  content:
+    label:
+      es: Contenido
+      en: Content
+    icon: text
+    columns:
+      main:
+        width: 2/3
+        sections:
+          contentFields:
+            type: fields
+            fields:
+              subtitle:
+                label: Subtítulo
+                type: text
+                help: Frase corta bajo el título.
+              intro:
+                label: Introducción
+                type: textarea
+                size: small
+                buttons: false
+              sections:
+                label: Apartados
+                type: structure
+                empty: Sin apartados
+                columns:
+                  heading: true
+                fields:
+                  heading:
+                    label: Título del apartado
+                    type: text
+                  text:
+                    label: Texto
+                    type: textarea
+                    size: medium
+      sidebar:
+        width: 1/3
+        sections:
+          contentSidebarFields:
+            type: fields
+            fields:
+              updatedAt:
+                label: Última actualización
+                type: date
+                display: DD/MM/YYYY
+              updatedLabel:
+                label: Etiqueta de la fecha
+                type: text
+                help: "Ej. Última actualización"
+              contactHeadline:
+                type: headline
+                label: Contacto
+              contactText:
+                label: Texto de cierre
+                type: textarea
+                size: small
+                buttons: false
+              contactEmail:
+                label: Correo
+                type: email
+                help: Si se deja vacío se usa el correo del sitio.
+
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  seo:
+    extends: tabs/seo

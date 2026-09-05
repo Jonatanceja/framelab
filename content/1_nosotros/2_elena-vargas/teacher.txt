@@ -1,0 +1,76 @@
+Title: Elena Vargas
+
+----
+
+Role: Directora de Arte
+
+----
+
+Tagline: Experta en desarrollo visual y diseño de entornos para videojuegos y cine animado.
+
+----
+
+Card: perfil
+
+----
+
+Badge:
+
+----
+
+Photo:
+
+----
+
+Photovideo:
+
+----
+
+Bio: Elena Vargas es directora de arte especializada en desarrollo visual y diseño de entornos. Su trabajo se mueve entre el videojuego y el cine animado, definiendo el aspecto de mundos completos antes de que exista una sola toma.
+
+----
+
+Skills:
+
+- 
+  text: Desarrollo visual
+- 
+  text: Diseño de entornos
+- 
+  text: Arte conceptual
+
+----
+
+Projectstitle: Proyectos destacados
+
+----
+
+Projects:
+
+----
+
+Metatitle: Elena Vargas — Mentora en Frame Lab
+
+----
+
+Metadescription: Directora de arte especializada en desarrollo visual y diseño de entornos para videojuegos y cine animado. Mentora en Frame Lab.
+
+----
+
+Ogtitle:
+
+----
+
+Ogdescription:
+
+----
+
+Ogimage:
+
+----
+
+Noindex: false
+
+----
+
+Uuid: mentorElenaVargas1

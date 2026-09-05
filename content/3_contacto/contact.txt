@@ -1,0 +1,188 @@
+Title: Contacto
+
+----
+
+Introtitle: Hablemos de tu
+
+----
+
+Introtitleaccent: futuro.
+
+----
+
+Introtext: Estamos listos para impulsar tu carrera en la industria. Déjanos un mensaje y un experto se pondrá en contacto contigo.
+
+----
+
+Emails:
+
+- 
+  label: Información general
+  address: hola@framelab.mx
+- 
+  label: Inscripciones
+  address: inscripciones@framelab.mx
+- 
+  label: Talento y vacantes
+  address: talento@framelab.mx
+
+----
+
+Phone: 
+
+----
+
+Locationlabel: Ubicación
+
+----
+
+Location:
+
+Guadalajara, Jalisco
+México
+
+----
+
+Namelabel: Nombre completo
+
+----
+
+Nameplaceholder: Tu nombre
+
+----
+
+Emaillabel: Correo electrónico
+
+----
+
+Emailplaceholder: tu@email.com
+
+----
+
+Courselabel: Curso de interés
+
+----
+
+Courseplaceholder: Selecciona un curso
+
+----
+
+Messagelabel: Mensaje (opcional)
+
+----
+
+Messageplaceholder: Cuéntanos un poco sobre tus objetivos...
+
+----
+
+Submitlabel: Enviar mensaje
+
+----
+
+Successmessage: ¡Gracias! Recibimos tu mensaje y te contactamos muy pronto.
+
+----
+
+Formnote: Respondemos en un máximo de 48 horas hábiles.
+
+----
+
+Faqtitle: Preguntas
+
+----
+
+Faqtitleaccent: frecuentes
+
+----
+
+Faqtext: Lo que más nos preguntan antes de inscribirse. Si te queda una duda, escríbenos con el formulario de arriba.
+
+----
+
+Faqlist:
+
+- 
+  question: >
+    ¿Necesito experiencia previa para
+    entrar?
+  answer: >
+    No. Los bootcamps arrancan desde los
+    fundamentos y están pensados para quien
+    viene de cero. Si ya dibujas o animas
+    también funcionan, porque cada alumno
+    avanza sobre su propio proyecto con
+    acompañamiento del mentor.
+- 
+  question: ¿Las clases son en vivo o grabadas?
+  answer: >
+    Son en vivo, con el mentor presente para
+    revisar tu trabajo y resolver dudas en
+    el momento. Cada sesión queda grabada y
+    disponible para que la repases durante
+    el bootcamp.
+- 
+  question: ¿Qué necesito para tomar el curso?
+  answer: >
+    Una computadora capaz de correr tu
+    software de trabajo, conexión estable a
+    internet y ganas de producir. Antes de
+    empezar te enviamos la lista de
+    programas y recursos, todos con opciones
+    gratuitas o de prueba.
+- 
+  question: ¿Qué me llevo al terminar?
+  answer: >
+    Una pieza terminada para tu portafolio
+    (moodboard, concepto visual, diseños y
+    pitch), la retroalimentación de un
+    profesional activo en la industria y tu
+    constancia de participación de Frame
+    Lab.
+- 
+  question: ¿Cómo son los pagos y las fechas?
+  answer: >
+    Las fechas de cada generación se
+    publican en la página del curso. El
+    pago se hace por transferencia o tarjeta
+    y puedes apartar tu lugar con un
+    anticipo. Escríbenos y te compartimos
+    las opciones vigentes.
+
+----
+
+Messages:
+
+- 
+  date: 2026-09-05 20:27
+  name: jonatanjonas@gmail.com
+  email: jonatanjonas@gmail.com
+  course: Diseño de Producción para Animación
+  message: Necesito mas información del curso.
+
+----
+
+Metatitle: Contacto — Frame Lab Animation School
+
+----
+
+Metadescription: ¿Dudas sobre los bootcamps de Frame Lab? Escríbenos y un experto te contacta. Respondemos en 48 horas hábiles.
+
+----
+
+Ogtitle: 
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Noindex: false
+
+----
+
+Uuid: contactoFrameLab01

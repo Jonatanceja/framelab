@@ -1,0 +1,9 @@
+Uuid: mttc7a1dvednp9nt
+
+----
+
+Template: images
+
+----
+
+Focus: 52.4% 32.1%

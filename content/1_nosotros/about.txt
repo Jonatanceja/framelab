@@ -1,0 +1,130 @@
+Title: Nosotros
+
+----
+
+Storybadge: Nuestra historia
+
+----
+
+Storytitle: Forjando el Futuro
+
+----
+
+Storytitleaccent: de la Animación
+
+----
+
+Storytext: Frame Lab nació de una necesidad: conectar el talento creativo de Latinoamérica con la exigencia técnica de los mejores estudios del mundo. No somos solo una escuela, somos un laboratorio de innovación donde cada alumno produce, falla, corrige y sale con oficio.
+
+----
+
+Storystats:
+
+- 
+  value: "+500"
+  label: Alumnos graduados
+- 
+  value: '95%'
+  label: Empleabilidad
+
+----
+
+Storyimage: - file://1l6wc2td2ashujrh
+
+----
+
+Storyvideo: 
+
+----
+
+Mentorstitle: Nuestros
+
+----
+
+Mentorstitleaccent: Mentores
+
+----
+
+Mentorstext: Aprende directamente de profesionales activos en la industria. Nuestros instructores han trabajado en producciones internacionales y traen esa experiencia al aula.
+
+----
+
+Mentorslist:
+
+- page://mentorSrNino000001
+- page://mentorElenaVargas1
+- page://mentorJavierRuiz01
+
+----
+
+Culturetitle: Cultura
+
+----
+
+Culturetitleaccent: Frame Lab
+
+----
+
+Culturelist:
+
+- 
+  icon: comunidad
+  title: Comunidad creativa
+  text: >
+    Fomentamos un ambiente colaborativo
+    donde los estudiantes aprenden tanto de
+    sus mentores como de sus compañeros,
+    creando una red profesional desde el
+    día uno.
+- 
+  icon: innovacion
+  title: Innovación constante
+  text: >
+    Actualizamos nuestro currículo
+    permanentemente para mantenernos a la
+    vanguardia de las herramientas y
+    técnicas de la industria.
+- 
+  icon: industria
+  title: Estándar de industria
+  text: >
+    Trabajamos con los mismos flujos,
+    tiempos y exigencias de un estudio real,
+    para que el salto al trabajo profesional
+    no te tome por sorpresa.
+
+----
+
+Cultureimage: - file://yjt6mo3gf47mfe9e
+
+----
+
+Culturevideo: 
+
+----
+
+Metatitle: Nosotros — Frame Lab Animation School
+
+----
+
+Metadescription: Somos un laboratorio de animación en Latinoamérica: mentores activos en la industria, proyectos reales y un currículo que se actualiza al ritmo del medio.
+
+----
+
+Ogtitle: 
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Noindex: false
+
+----
+
+Uuid: aboutFrameLab001

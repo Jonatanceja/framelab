@@ -1,0 +1,102 @@
+Title: Frame Lab
+
+----
+
+Menu:
+
+- 
+  label: Inicio
+  link: /
+- 
+  label: Cursos
+  link: /cursos
+- 
+  label: Nosotros
+  link: /nosotros
+- 
+  label: Contacto
+  link: /contacto
+
+----
+
+Navctalabel: Inscribirse
+
+----
+
+Navctalink: "#suscribete"
+
+----
+
+Sitedescription: Escuela de animación en línea. Bootcamps intensivos de diseño de producción, personajes y rigging con mentores activos en la industria.
+
+----
+
+Sitelocale: es_MX
+
+----
+
+Twittersite: 
+
+----
+
+Ogimage: 
+
+----
+
+Footertagline: Precision in Motion.
+
+----
+
+Footercopyright: © 2026 Frame Lab Animation School.
+
+----
+
+Footercolumns:
+
+- 
+  headline: Inscripciones
+  email: inscripciones@framelab.mx
+- 
+  headline: Envía tu CV
+  email: talento@framelab.mx
+
+----
+
+Footerlegal:
+
+- 
+  label: Política de Privacidad
+  link: /privacidad
+- 
+  label: Términos de Servicio
+  link: /terminos
+
+----
+
+Creditlabel: Diseño y desarrollo por
+
+----
+
+Creditname: Webxpress
+
+----
+
+Creditlink: https://webxpress.website
+
+----
+
+Email: hola@framelab.mx
+
+----
+
+Social:
+
+- 
+  platform: instagram
+  link: https://instagram.com/framelab.mx
+- 
+  platform: youtube
+  link: https://youtube.com/@framelab
+- 
+  platform: tiktok
+  link: 'https://www.tiktok.com/@frame.lab.animation?_r=1&_t=ZS-996mCXju7CU'

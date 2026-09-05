@@ -1,0 +1,160 @@
+title: Mentor
+icon: user
+
+tabs:
+  # ------------------------------------------------------------------
+  # Perfil
+  # ------------------------------------------------------------------
+  profile:
+    label:
+      es: Perfil
+      en: Profile
+    icon: user
+    columns:
+      main:
+        width: 2/3
+        sections:
+          profileFields:
+            type: fields
+            fields:
+              role:
+                label: Cargo
+                type: text
+                help: Se muestra bajo el nombre, en mayúsculas.
+              tagline:
+                label: Frase corta
+                type: text
+                help: Se usa en la tarjeta de la página Nosotros y en los metadatos.
+
+              cardHeadline:
+                type: headline
+                label: Tarjeta en Nosotros
+              card:
+                label: Tipo de tarjeta
+                type: select
+                width: 1/2
+                default: perfil
+                empty: false
+                options:
+                  destacado: Destacada (grande)
+                  perfil: Perfil con retrato
+                  foto: Solo foto
+                help: Coloca una sola tarjeta destacada.
+              badge:
+                label: Etiqueta
+                type: text
+                width: 1/2
+                help: Solo se muestra en la tarjeta destacada.
+      sidebar:
+        width: 1/3
+        sections:
+          profileSidebarFields:
+            type: fields
+            fields:
+              photo:
+                label: Retrato
+                type: files
+                multiple: false
+                layout: cards
+                uploads: images
+                help: Formato vertical (4:5), mínimo 1000px de ancho.
+              photoVideo:
+                label: Video (opcional)
+                type: files
+                multiple: false
+                layout: list
+                query: page.files.filterBy("type", "video")
+                help: MP4 o WebM en mute y en bucle. Si hay video sustituye al retrato.
+
+  # ------------------------------------------------------------------
+  # Biografía
+  # ------------------------------------------------------------------
+  bio:
+    label:
+      es: Biografía
+      en: Bio
+    icon: text
+    columns:
+      main:
+        width: 1/1
+        sections:
+          bioFields:
+            type: fields
+            fields:
+              bio:
+                label: Biografía
+                type: textarea
+                size: large
+
+  # ------------------------------------------------------------------
+  # Especialidades
+  # ------------------------------------------------------------------
+  skills:
+    label:
+      es: Especialidades
+      en: Skills
+    icon: tag
+    columns:
+      main:
+        width: 2/3
+        sections:
+          skillsFields:
+            type: fields
+            fields:
+              skills:
+                label: Especialidades
+                type: structure
+                empty: Sin especialidades
+                help: Se muestran como etiquetas debajo de la biografía.
+                fields:
+                  text:
+                    label: Especialidad
+                    type: text
+
+  # ------------------------------------------------------------------
+  # Proyectos
+  # ------------------------------------------------------------------
+  projects:
+    label:
+      es: Proyectos
+      en: Projects
+    icon: video
+    columns:
+      main:
+        width: 2/3
+        sections:
+          projectsFields:
+            type: fields
+            fields:
+              projectsTitle:
+                label: Título
+                type: text
+              projects:
+                label: Proyectos destacados
+                type: structure
+                empty: Sin proyectos
+                columns:
+                  title: true
+                  detail: true
+                fields:
+                  title:
+                    label: Proyecto
+                    type: text
+                    width: 1/2
+                  detail:
+                    label: Detalle
+                    type: text
+                    width: 1/2
+                    help: "Opcional. Ej. Diseño de producción, 2023"
+                  link:
+                    label: Enlace
+                    type: text
+                    width: 1/2
+
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  seo:
+    extends: tabs/seo

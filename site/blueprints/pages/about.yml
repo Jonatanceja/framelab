@@ -1,0 +1,215 @@
+title: Nosotros
+icon: users
+
+options:
+  changeTemplate: false
+
+tabs:
+  # ------------------------------------------------------------------
+  # Historia
+  # ------------------------------------------------------------------
+  story:
+    label:
+      es: Historia
+      en: Story
+    icon: book
+    columns:
+      main:
+        width: 2/3
+        sections:
+          storyFields:
+            type: fields
+            fields:
+              storyBadge:
+                label: Etiqueta
+                type: text
+              storyTitle:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              storyTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              storyText:
+                label: Texto
+                type: textarea
+                size: small
+                buttons: false
+              storyStatsHeadline:
+                type: headline
+                label: Datos
+              storyStats:
+                label: Datos destacados
+                type: structure
+                empty: Sin datos
+                fields:
+                  value:
+                    label: Valor
+                    type: text
+                    width: 1/2
+                  label:
+                    label: Etiqueta
+                    type: text
+                    width: 1/2
+      sidebar:
+        width: 1/3
+        sections:
+          storySidebarFields:
+            type: fields
+            fields:
+              storyImage:
+                label: Imagen
+                type: files
+                multiple: false
+                layout: cards
+                uploads: images
+                help: Formato vertical u horizontal, mínimo 1200px.
+              storyVideo:
+                label: Video (opcional)
+                type: files
+                multiple: false
+                layout: list
+                query: page.files.filterBy("type", "video")
+                help: MP4 o WebM en mute y en bucle. Si hay video sustituye a la imagen.
+
+  # ------------------------------------------------------------------
+  # Mentores
+  # ------------------------------------------------------------------
+  mentors:
+    label:
+      es: Mentores
+      en: Mentors
+    icon: users
+    columns:
+      main:
+        width: 1/1
+        sections:
+          mentorsFields:
+            type: fields
+            fields:
+              mentorsTitle:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              mentorsTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              mentorsText:
+                label: Introducción
+                type: textarea
+                size: small
+                buttons: false
+              mentorsList:
+                label: Mentores a mostrar
+                type: pages
+                multiple: true
+                layout: cards
+                query: page.children.listed
+                image:
+                  query: page.photo.toFile
+                  back: black
+                info: "{{ page.role }}"
+                empty: Todavía no has elegido mentores
+                help: Elige las fichas de la pestaña "Fichas de mentores". Si lo dejas vacío se muestran todas.
+  # ------------------------------------------------------------------
+  # Fichas de mentores
+  # ------------------------------------------------------------------
+  teachers:
+    label:
+      es: Fichas de mentores
+      en: Mentor pages
+    icon: users
+    sections:
+      teachersTeachers:
+        headline: Fichas
+        type: pages
+        template: teacher
+        create: teacher
+        layout: cards
+        image:
+          query: page.photo.toFile
+          back: black
+        info: "{{ page.role }}"
+        empty: Todavía no hay fichas de mentores
+
+  # ------------------------------------------------------------------
+  # Cultura
+  # ------------------------------------------------------------------
+  culture:
+    label:
+      es: Cultura
+      en: Culture
+    icon: heart
+    columns:
+      main:
+        width: 2/3
+        sections:
+          cultureFields:
+            type: fields
+            fields:
+              cultureTitle:
+                label: Título (blanco)
+                type: text
+                width: 1/2
+              cultureTitleAccent:
+                label: Título (degradado)
+                type: text
+                width: 1/2
+              cultureList:
+                label: Valores
+                type: structure
+                empty: Sin valores
+                columns:
+                  title: true
+                  icon: true
+                fields:
+                  icon:
+                    label: Ícono
+                    type: select
+                    width: 1/2
+                    default: comunidad
+                    empty: false
+                    options:
+                      comunidad: Comunidad
+                      innovacion: Innovación
+                      industria: Industria
+                      portafolio: Portafolio
+                      mentoria: Mentoría
+                  title:
+                    label: Título
+                    type: text
+                    width: 1/2
+                  text:
+                    label: Texto
+                    type: textarea
+                    size: small
+                    buttons: false
+      sidebar:
+        width: 1/3
+        sections:
+          cultureSidebarFields:
+            type: fields
+            fields:
+              cultureImage:
+                label: Imagen
+                type: files
+                multiple: false
+                layout: cards
+                uploads: images
+              cultureVideo:
+                label: Video (opcional)
+                type: files
+                multiple: false
+                layout: list
+                query: page.files.filterBy("type", "video")
+                help: MP4 o WebM en mute y en bucle. Si hay video sustituye a la imagen.
+
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  seo:
+    extends: tabs/seo

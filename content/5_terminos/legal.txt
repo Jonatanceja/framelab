@@ -1,0 +1,120 @@
+Title: Términos de Servicio
+
+----
+
+Subtitle: Condiciones de uso
+
+----
+
+Intro: Estas condiciones rigen el uso de este sitio y la contratación de los programas de Frame Lab Animation School. Al inscribirte a un curso aceptas lo que aquí se describe.
+
+----
+
+Updatedat: 2026-09-01
+
+----
+
+Updatedlabel: Última actualización
+
+----
+
+Sections:
+
+- 
+  heading: Sobre estos términos
+  text: |
+    Este documento es un acuerdo entre tú y Frame Lab Animation School ("Frame Lab"), con domicilio en Guadalajara, Jalisco, México.
+
+    Al navegar el sitio, enviarnos un formulario o inscribirte a un programa, confirmas que leíste y aceptas estos términos. Si no estás de acuerdo con alguno, te pedimos no usar el sitio ni contratar nuestros servicios.
+- 
+  heading: Qué ofrecemos
+  text: |
+    Frame Lab imparte programas de formación en animación y diseño de producción, en línea y en vivo, con sesiones grabadas disponibles durante la duración del curso.
+
+    La información de cada programa —duración, temario, mentor y entregables— se publica en su página. Podemos ajustar el temario o el calendario cuando sea necesario para mantener la calidad del programa; si el cambio es relevante, te lo avisamos por correo antes de que empiece.
+- 
+  heading: Inscripción y pagos
+  text: |
+    Tu lugar en una generación se confirma cuando se recibe el pago o el anticipo acordado. Los precios se expresan en pesos mexicanos e incluyen los impuestos aplicables, salvo que se indique lo contrario.
+
+    Aceptamos los métodos de pago que se comuniquen al momento de la inscripción. Si requieres factura, solicítala antes de que termine el mes en que se realizó el pago.
+- 
+  heading: Cancelaciones y reembolsos
+  text: |
+    Puedes cancelar tu inscripción y solicitar el reembolso completo hasta **siete días naturales antes** del inicio del programa.
+
+    Entre ese plazo y el inicio del curso, el anticipo se conserva como crédito para una generación posterior. Una vez iniciado el programa no hay reembolso, pero puedes solicitar el cambio a la siguiente generación por causa justificada, una sola vez.
+
+    Si Frame Lab cancela o pospone un programa, puedes elegir entre el reembolso íntegro o el cambio a otra fecha.
+- 
+  heading: Acceso a las clases y al material
+  text: |
+    Tu acceso es personal e intransferible. Las grabaciones, presentaciones y recursos del curso se te comparten para tu aprendizaje durante el programa y no pueden descargarse para redistribuirse.
+
+    Está prohibido grabar, copiar, revender o compartir los materiales, así como dar acceso a terceros con tus credenciales. El incumplimiento puede dar lugar a la baja del programa sin reembolso.
+- 
+  heading: Tu trabajo y tu portafolio
+  text: |
+    Los ejercicios y proyectos que realices durante el curso son tuyos. Conservas todos los derechos sobre ellos y puedes usarlos libremente en tu portafolio.
+
+    Al inscribirte nos autorizas a mostrar tu trabajo con fines de difusión de la escuela, siempre con tu crédito. Si prefieres que no lo hagamos, basta con avisarnos por correo.
+- 
+  heading: Propiedad intelectual de Frame Lab
+  text: |
+    La marca Frame Lab, su identidad visual, los contenidos del sitio y los materiales didácticos son propiedad de Frame Lab o de sus respectivos autores, y están protegidos por la legislación aplicable.
+
+    Nada en estos términos te transfiere la titularidad de esos derechos.
+- 
+  heading: Conducta en la comunidad
+  text: |
+    Nuestros grupos se sostienen en el respeto. No se tolera el acoso, la discriminación, el plagio ni cualquier conducta que impida el trabajo de tus compañeros o mentores.
+
+    Frame Lab puede suspender el acceso de quien incurra en estas conductas, sin reembolso y sin perjuicio de las acciones legales que correspondan.
+- 
+  heading: Limitación de responsabilidad
+  text: |
+    Nos comprometemos a impartir los programas con calidad profesional, pero no garantizamos resultados específicos de empleo o contratación, ya que dependen de factores ajenos a la escuela.
+
+    Frame Lab no es responsable por fallas de tu equipo o conexión, ni por interrupciones de servicios de terceros que estén fuera de su control razonable.
+- 
+  heading: Cambios y legislación aplicable
+  text: |
+    Podemos modificar estos términos; la versión vigente será siempre la publicada en esta página con su fecha de actualización. Los cambios no afectan las inscripciones ya confirmadas.
+
+    Estos términos se rigen por las leyes de los Estados Unidos Mexicanos. Para cualquier controversia, las partes se someten a los tribunales competentes de Guadalajara, Jalisco, renunciando a cualquier otro fuero.
+
+----
+
+Contacttext: Si algo de este documento no te queda claro antes de inscribirte, escríbenos y lo revisamos contigo.
+
+----
+
+Contactemail:
+
+----
+
+Metatitle: Términos de Servicio
+
+----
+
+Metadescription: Condiciones de inscripción, pagos, cancelaciones y uso de los materiales de los programas de Frame Lab Animation School.
+
+----
+
+Ogtitle:
+
+----
+
+Ogdescription:
+
+----
+
+Ogimage:
+
+----
+
+Noindex: false
+
+----
+
+Uuid: legalTerminos00001

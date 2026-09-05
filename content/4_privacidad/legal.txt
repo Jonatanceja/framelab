@@ -1,0 +1,124 @@
+Title: Política de Privacidad
+
+----
+
+Subtitle: Aviso de privacidad
+
+----
+
+Intro: En Frame Lab Animation School tratamos tus datos personales con el cuidado que nos gustaría que trataran los nuestros. Este aviso explica qué información recabamos, para qué la usamos y cómo puedes controlarla.
+
+----
+
+Updatedat: 2026-09-01
+
+----
+
+Updatedlabel: Última actualización
+
+----
+
+Sections:
+
+- 
+  heading: Quién es responsable de tus datos
+  text: |
+    Frame Lab Animation School (en adelante, "Frame Lab"), con domicilio en Guadalajara, Jalisco, México, es responsable del tratamiento de los datos personales que nos proporcionas a través de este sitio.
+
+    Este aviso se emite conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y su reglamento.
+- 
+  heading: Qué datos recabamos
+  text: |
+    Recabamos únicamente los datos que tú nos das y los que genera tu visita al sitio:
+
+    - **Datos de contacto:** nombre y correo electrónico cuando llenas el formulario de contacto o te suscribes al boletín.
+    - **Datos de interés:** el curso sobre el que preguntas y el mensaje que decides escribirnos.
+    - **Datos técnicos:** información básica de navegación que registra el servidor, como la fecha y hora de tu visita.
+
+    No solicitamos datos personales sensibles ni información financiera a través de este sitio.
+- 
+  heading: Para qué los usamos
+  text: |
+    Usamos tus datos para las siguientes finalidades primarias, necesarias para atenderte:
+
+    - Responder tus preguntas y darte información sobre nuestros programas.
+    - Gestionar tu inscripción y darte seguimiento durante el curso.
+    - Enviarte la información que solicitaste.
+
+    Como finalidad secundaria, si te suscribiste al boletín, te enviamos noticias, recursos y fechas de próximas generaciones. Puedes negarte a esta finalidad en cualquier momento sin que afecte la atención que te damos.
+- 
+  heading: Con quién los compartimos
+  text: |
+    No vendemos, rentamos ni comercializamos tus datos personales.
+
+    Solo los compartimos con proveedores que nos ayudan a operar el sitio y la comunicación —por ejemplo, servicios de hospedaje y de envío de correo— y únicamente en la medida necesaria para prestar ese servicio. Estos proveedores están obligados a proteger tu información.
+
+    También podríamos revelarlos cuando una autoridad competente lo requiera conforme a la ley.
+- 
+  heading: Cuánto tiempo los conservamos
+  text: |
+    Conservamos tus datos mientras exista una relación con nosotros y, después, durante el plazo necesario para cumplir obligaciones legales o atender aclaraciones.
+
+    Si te das de baja del boletín, eliminamos tu correo de esa lista. Si nos pides que borremos tu mensaje de contacto, lo hacemos salvo que debamos conservarlo por una obligación legal.
+- 
+  heading: Cookies y tecnologías similares
+  text: |
+    Este sitio no utiliza cookies de publicidad ni de seguimiento de terceros.
+
+    Guardamos en tu navegador una preferencia local —el tema claro u oscuro que elijas— que se queda en tu dispositivo y nunca se envía a nuestros servidores. Puedes borrarla desde la configuración de tu navegador.
+- 
+  heading: Tus derechos ARCO
+  text: |
+    Tienes derecho a **acceder** a tus datos, **rectificarlos** si son inexactos, **cancelarlos** cuando consideres que no son necesarios y **oponerte** a su tratamiento para fines específicos. También puedes revocar el consentimiento que nos hayas otorgado.
+
+    Para ejercer cualquiera de estos derechos, escríbenos al correo que aparece al final de este documento indicando tu nombre, el derecho que deseas ejercer y un medio para contactarte. Te responderemos en un plazo máximo de 20 días hábiles.
+- 
+  heading: Seguridad de la información
+  text: |
+    Aplicamos medidas administrativas y técnicas razonables para proteger tus datos contra pérdida, uso indebido o acceso no autorizado. El sitio se sirve mediante conexión cifrada.
+
+    Ningún sistema es infalible: si detectamos una vulneración que afecte de forma significativa tus datos, te lo comunicaremos.
+- 
+  heading: Menores de edad
+  text: |
+    Nuestros programas están dirigidos a mayores de 18 años. Si una persona menor de edad desea inscribirse, requerimos el consentimiento de su padre, madre o tutor, quien será el titular de la relación con Frame Lab.
+- 
+  heading: Cambios a este aviso
+  text: |
+    Podemos actualizar este aviso cuando cambie la forma en que tratamos tus datos o cuando lo exija la normativa. La versión vigente siempre estará publicada en esta página, con su fecha de última actualización.
+
+----
+
+Contacttext: Si quieres ejercer tus derechos ARCO, darte de baja del boletín o preguntar cualquier cosa sobre este aviso, escríbenos y te respondemos.
+
+----
+
+Contactemail:
+
+----
+
+Metatitle: Política de Privacidad
+
+----
+
+Metadescription: Cómo Frame Lab recaba, usa y protege tus datos personales, y cómo puedes ejercer tus derechos ARCO.
+
+----
+
+Ogtitle:
+
+----
+
+Ogdescription:
+
+----
+
+Ogimage:
+
+----
+
+Noindex: false
+
+----
+
+Uuid: legalPrivacidad001

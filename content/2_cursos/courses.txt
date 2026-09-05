@@ -1,0 +1,53 @@
+Title: Cursos
+
+----
+
+Introbadge: Programas intensivos
+
+----
+
+Introtitle: Nuestros
+
+----
+
+Introtitleaccent: Cursos
+
+----
+
+Introtext: Programas cortos e intensivos, diseñados con profesionales activos en la industria. Cada curso termina con una pieza real en tu portafolio.
+
+----
+
+Introimage: - file://7ftqbxarutqeoa8a
+
+----
+
+Introvideo: 
+
+----
+
+Metatitle: Cursos — Frame Lab Animation School
+
+----
+
+Metadescription: Bootcamps intensivos de animación en línea: diseño de producción, personajes y rigging, con mentores activos en la industria.
+
+----
+
+Ogtitle: 
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Noindex: false
+
+----
+
+Uuid: cursosFrameLab001

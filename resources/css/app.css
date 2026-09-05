@@ -1,0 +1,358 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+@source "../../site/templates";
+
+/* ------------------------------------------------------------------
+ * Paleta
+ *
+ * Los colores de marca son fijos; los semánticos apuntan a variables
+ * --fl-* que cambian según el tema (claro, oscuro o el del sistema).
+ * ------------------------------------------------------------------ */
+@theme {
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  --font-display: "Archivo", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Marca */
+  --color-pink-brand: #ec4784;
+  /* Solo para superficies con texto blanco encima: #ec4784 con blanco
+     da 3.62:1 y no llega al mínimo de 4.5:1 (WCAG AA). */
+  --color-pink-deep: #d81f65;
+  --color-pink-bright: #ff5c9d;
+  --color-pink-soft: #ffa3c8;
+  --color-violet-brand: #997dd3;
+  --color-violet-bright: #b794f6;
+
+  /* Marca, ajustada para tener contraste en ambos temas */
+  --color-brand-text: var(--fl-brand-text);
+  --color-brand-hover: var(--fl-brand-hover);
+  --color-violet-text: var(--fl-violet-text);
+
+  /* Superficies */
+  --color-bg: var(--fl-bg);
+  --color-bg-soft: var(--fl-bg-soft);
+  --color-surface: var(--fl-surface);
+  --color-surface-2: var(--fl-surface-2);
+  --color-fill: var(--fl-fill);
+  --color-fill-strong: var(--fl-fill-strong);
+
+  /* Bordes y sombras */
+  --color-line: var(--fl-line);
+  --color-line-strong: var(--fl-line-strong);
+  --color-shade: var(--fl-shade);
+
+  /* Texto */
+  --color-fg: var(--fl-fg);
+  --color-fg-muted: var(--fl-fg-muted);
+  --color-fg-subtle: var(--fl-fg-subtle);
+  --color-fg-faint: var(--fl-fg-faint);
+
+  /* Fondos fijos para las secciones con imagen */
+  --color-ink-950: #0a090c;
+  --color-ink-900: #0f0e12;
+  --color-ink-850: #141218;
+
+  --radius-4xl: 2rem;
+
+  /* Curvas suaves compartidas por tarjetas, botones e imágenes */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-gentle: cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* Tema claro (predeterminado del sistema) */
+:root {
+  color-scheme: light;
+
+  --fl-bg: #faf9fc;
+  --fl-bg-soft: #f2eff7;
+  --fl-surface: #ffffff;
+  --fl-surface-2: #ece8f2;
+  --fl-fill: rgb(23 20 28 / 4%);
+  --fl-fill-strong: rgb(23 20 28 / 8%);
+
+  --fl-line: #e4dfec;
+  --fl-line-strong: #cec5dd;
+  --fl-shade: rgb(43 26 66 / 10%);
+
+  --fl-fg: #17141c;
+  --fl-fg-muted: #55505f;
+  --fl-fg-subtle: #6b6478;
+  --fl-fg-faint: #8a8398;
+
+  --fl-brand-text: #cf2f6f;
+  --fl-brand-hover: #a81b52;
+  --fl-violet-text: #6b46c1;
+
+  --fl-gradient: linear-gradient(135deg, #e0246f 0%, #d4359b 45%, #7c5cd6 100%);
+  --fl-art-placeholder: radial-gradient(80% 80% at 30% 20%, #ece5f7, #f6f3fa);
+  --fl-art-backdrop: radial-gradient(
+    110% 100% at 30% 0%,
+    #efe7fa 0%,
+    #f7f4fb 50%,
+    #faf9fc 100%
+  );
+}
+
+/* Tema oscuro: por preferencia del sistema… */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --fl-bg: #0a090c;
+    --fl-bg-soft: #0f0e12;
+    --fl-surface: #141218;
+    --fl-surface-2: #1a171f;
+    --fl-fill: rgb(255 255 255 / 5%);
+    --fl-fill-strong: rgb(255 255 255 / 10%);
+
+    --fl-line: rgb(255 255 255 / 8%);
+    --fl-line-strong: rgb(255 255 255 / 16%);
+    --fl-shade: rgb(0 0 0 / 55%);
+
+    --fl-fg: #ffffff;
+    --fl-fg-muted: rgb(255 255 255 / 62%);
+    --fl-fg-subtle: rgb(255 255 255 / 52%);
+    --fl-fg-faint: rgb(255 255 255 / 38%);
+
+    --fl-brand-text: #ec4784;
+    --fl-brand-hover: #ff5c9d;
+    --fl-violet-text: #b794f6;
+
+    --fl-gradient: linear-gradient(
+      135deg,
+      #ec4784 0%,
+      #ff5c9d 38%,
+      #b794f6 100%
+    );
+    --fl-art-placeholder: radial-gradient(80% 80% at 30% 20%, #2a1f3d, #141218);
+    --fl-art-backdrop: radial-gradient(
+      110% 100% at 30% 0%,
+      #2a1f3d 0%,
+      #140f1c 50%,
+      #0a090c 100%
+    );
+  }
+}
+
+/* … o elegido a mano desde el selector del menú. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --fl-bg: #0a090c;
+  --fl-bg-soft: #0f0e12;
+  --fl-surface: #141218;
+  --fl-surface-2: #1a171f;
+  --fl-fill: rgb(255 255 255 / 5%);
+  --fl-fill-strong: rgb(255 255 255 / 10%);
+
+  --fl-line: rgb(255 255 255 / 8%);
+  --fl-line-strong: rgb(255 255 255 / 16%);
+  --fl-shade: rgb(0 0 0 / 55%);
+
+  --fl-fg: #ffffff;
+  --fl-fg-muted: rgb(255 255 255 / 62%);
+  --fl-fg-subtle: rgb(255 255 255 / 52%);
+  --fl-fg-faint: rgb(255 255 255 / 38%);
+
+  --fl-brand-text: #ec4784;
+  --fl-brand-hover: #ff5c9d;
+  --fl-violet-text: #b794f6;
+
+  --fl-gradient: linear-gradient(135deg, #ec4784 0%, #ff5c9d 38%, #b794f6 100%);
+  --fl-art-placeholder: radial-gradient(80% 80% at 30% 20%, #2a1f3d, #141218);
+  --fl-art-backdrop: radial-gradient(
+    110% 100% at 30% 0%,
+    #2a1f3d 0%,
+    #140f1c 50%,
+    #0a090c 100%
+  );
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg-muted);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    color: var(--color-fg);
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: var(--color-pink-brand);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand-text);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    @apply ease-soft inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold whitespace-nowrap transition duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-pink-deep shadow-pink-deep/30 hover:bg-pink-brand hover:shadow-pink-brand/35 text-white shadow-lg hover:-translate-y-0.5 hover:shadow-xl;
+  }
+
+  .btn-ghost {
+    @apply border-line-strong bg-fill text-fg hover:border-fg-faint hover:bg-fill-strong border backdrop-blur hover:-translate-y-0.5;
+  }
+
+  /**
+   * Tarjetas: la elevación y la sombra se animan con la misma curva y
+   * duración, así el movimiento arranca y termina sin tirones. La sombra
+   * parte de un valor equivalente transparente para que interpole en vez
+   * de aparecer de golpe.
+   */
+  .card {
+    @apply border-line bg-surface relative overflow-hidden rounded-2xl border;
+
+    box-shadow: 0 18px 40px -22px transparent;
+    transition:
+      transform 0.5s var(--ease-soft),
+      border-color 0.5s var(--ease-soft),
+      box-shadow 0.5s var(--ease-soft);
+    will-change: transform;
+  }
+
+  .card:hover,
+  .card:focus-visible {
+    border-color: var(--color-line-strong);
+    box-shadow: 0 18px 40px -22px var(--color-shade);
+    transform: translateY(-6px);
+  }
+
+  /* Tarjetas menores (datos, valores, testimonios) */
+  .lift {
+    transition:
+      transform 0.5s var(--ease-soft),
+      border-color 0.5s var(--ease-soft);
+  }
+
+  .lift:hover {
+    border-color: var(--color-line-strong);
+    transform: translateY(-4px);
+  }
+
+  .eyebrow {
+    @apply border-line bg-fill text-fg-muted inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-medium tracking-[0.18em] uppercase backdrop-blur;
+  }
+
+  /* Tipografía de textos largos (biografías, páginas de texto) */
+  .prose-fl {
+    --tw-prose-body: var(--color-fg-muted);
+    --tw-prose-headings: var(--color-fg);
+    --tw-prose-bold: var(--color-fg);
+    --tw-prose-links: var(--color-brand-text);
+    --tw-prose-quotes: var(--color-fg);
+    --tw-prose-quote-borders: var(--color-line-strong);
+    --tw-prose-bullets: var(--color-line-strong);
+    --tw-prose-counters: var(--color-fg-subtle);
+    --tw-prose-hr: var(--color-line);
+    --tw-prose-code: var(--color-fg);
+    --tw-prose-captions: var(--color-fg-subtle);
+  }
+}
+
+@utility art-placeholder {
+  background-image: var(--fl-art-placeholder);
+}
+
+@utility art-backdrop {
+  background-image: var(--fl-art-backdrop);
+}
+
+@utility text-gradient {
+  background-image: var(--fl-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+/* El logotipo tiene una versión por tema (texto blanco / texto oscuro) */
+.logo-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-light {
+    display: none;
+  }
+
+  :root:not([data-theme="light"]) .logo-dark {
+    display: block;
+  }
+}
+
+:root[data-theme="dark"] .logo-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .logo-dark {
+  display: block;
+}
+
+/**
+ * Aparición al hacer scroll (ver resources/js/app.js).
+ *
+ * Va como animación —no como transición— y mueve `translate` en vez de
+ * `transform`: así no pisa la transición propia de cada elemento y el
+ * hover de las tarjetas puede animar su elevación, borde y sombra.
+ */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    translate: 0 24px;
+  }
+
+  to {
+    opacity: 1;
+    translate: none;
+  }
+}
+
+[data-reveal] {
+  opacity: 0;
+}
+
+[data-reveal].is-visible {
+  animation: reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms)
+    both;
+}
+
+.no-js [data-reveal] {
+  opacity: 1;
+  transform: none;
+}
