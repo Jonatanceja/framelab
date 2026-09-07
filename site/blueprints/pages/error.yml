@@ -1,0 +1,74 @@
+title:
+  es: Página de error (404)
+  en: Error page (404)
+icon: alert
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+
+tabs:
+  # ------------------------------------------------------------------
+  # Contenido
+  # ------------------------------------------------------------------
+  content:
+    label:
+      es: Contenido
+      en: Content
+    icon: text
+    columns:
+      main:
+        width: 2/3
+        sections:
+          errorFields:
+            type: fields
+            fields:
+              errorCode:
+                label: Código
+                type: text
+                width: 1/3
+                help: El número grande. Normalmente 404. (El nombre «code» lo usa Kirby.)
+              heading:
+                label: Título
+                type: text
+                help: Encabezado que ve quien llega a una dirección inexistente.
+              text:
+                label: Texto
+                type: textarea
+                size: small
+                buttons: false
+              buttonLabel:
+                label: Botón principal
+                type: text
+                width: 1/2
+                help: Lleva siempre al inicio.
+              contactLabel:
+                label: Botón secundario
+                type: text
+                width: 1/2
+                help: Lleva a la página de contacto. Vacío para ocultarlo.
+      sidebar:
+        width: 1/3
+        sections:
+          errorSidebarFields:
+            type: fields
+            fields:
+              linksHeadline:
+                type: headline
+                label: Enlaces sugeridos
+              linksTitle:
+                label: Encabezado de la lista
+                type: text
+              links:
+                label: Páginas
+                type: pages
+                query: site.children.listed
+                help: Si se deja vacío no se muestra la lista.
+
+  # ------------------------------------------------------------------
+  # SEO
+  # ------------------------------------------------------------------
+  seo:
+    extends: tabs/seo

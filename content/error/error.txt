@@ -2,4 +2,48 @@ Title: Error
 
 ----
 
+Errorcode: 404
+
+----
+
+Heading: Esta página se salió de cuadro
+
+----
+
+Text: La dirección que buscas no existe o cambió de lugar. Revisa el enlace o vuelve al inicio para seguir explorando Frame Lab.
+
+----
+
+Buttonlabel: Volver al inicio
+
+----
+
+Contactlabel: Escríbenos
+
+----
+
+Linkstitle: O sigue por aquí
+
+----
+
+Links:
+
+- page://cursosFrameLab001
+- page://aboutFrameLab001
+- page://contactoFrameLab01
+
+----
+
+Metatitle: Página no encontrada
+
+----
+
+Metadescription: No encontramos la página que buscas. Vuelve al inicio de Frame Lab Animation School o explora nuestros cursos.
+
+----
+
+Noindex: true
+
+----
+
 Uuid: idmFkmveblLksMfm
