@@ -3,7 +3,7 @@
     $video = $page->heroVideo()->toFile();
     $stats = $page->heroStats()->toStructure();
 @endphp
-<section id="inicio" class="relative isolate flex min-h-[92vh] items-end overflow-hidden pt-28 pb-14 sm:pb-20">
+<section id="inicio" class="relative isolate flex min-h-[92vh] items-end overflow-hidden pt-28 pb-14 sm:pb-20 lg:pb-32">
     <div class="absolute inset-0 -z-10">
         @include('partials.media', [
             'image' => $image,
@@ -82,13 +82,19 @@
         </div>
     </div>
 
-    <a
-        href="#nosotros"
-        class="hover:border-pink-brand/60 border-line-strong text-fg-muted hover:text-fg absolute right-8 bottom-8 hidden size-12 items-center justify-center rounded-full border transition lg:inline-flex"
-        aria-label="Bajar a la siguiente sección"
-    >
-        <svg class="size-4 animate-bounce" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M8 3v10m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    </a>
+    {{-- Mismo contenedor que el contenido para que el botón quede a su misma
+         línea izquierda en cualquier ancho de pantalla. --}}
+    <div class="pointer-events-none absolute inset-x-0 bottom-8 hidden lg:block">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8">
+            <a
+                href="#nosotros"
+                class="hover:border-pink-brand/60 border-line-strong text-fg-muted hover:text-fg pointer-events-auto inline-flex size-12 items-center justify-center rounded-full border transition"
+                aria-label="Bajar a la siguiente sección"
+            >
+                <svg class="size-4 animate-bounce" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M8 3v10m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
 </section>

@@ -103,6 +103,44 @@ tabs:
                 help: 1200 × 630 px.
 
   # ------------------------------------------------------------------
+  # Notificaciones
+  # ------------------------------------------------------------------
+  notifications:
+    label:
+      es: Notificaciones
+      en: Notifications
+    icon: bell
+    columns:
+      main:
+        width: 2/3
+        sections:
+          notificationsFields:
+            type: fields
+            fields:
+              notifyInfo:
+                label: Avisos por correo
+                type: info
+                text: |
+                  Al recibir un mensaje o una suscripción se envía un aviso a las
+                  direcciones de abajo. Los registros se guardan siempre, aunque
+                  el correo falle: los mensajes en Contacto y las altas en Inicio.
+              notifyEnabled:
+                label: Enviar avisos
+                type: toggle
+                default: true
+                text:
+                  - Apagados
+                  - Encendidos
+              notifyMessages:
+                label: Avisar mensajes a
+                type: email
+                help: Formulario de contacto. Vacío = no se avisa.
+              notifySubscriptions:
+                label: Avisar suscripciones a
+                type: email
+                help: Alta al boletín. Vacío = no se avisa.
+
+  # ------------------------------------------------------------------
   # Pie de página
   # ------------------------------------------------------------------
   footer:

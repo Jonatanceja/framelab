@@ -48,6 +48,18 @@ return [
                 if ($stored === false) {
                     return Response::json(['ok' => false, 'message' => 'No pudimos guardar tu correo, inténtalo más tarde.'], 500);
                 }
+
+                framelab_notify(
+                    'subscription',
+                    'Nueva suscripción: '.$email,
+                    [
+                        'email' => $email,
+                        'date' => date('d/m/Y H:i'),
+                        'total' => $home->subscribers()->toStructure()->count(),
+                        'panel' => url('panel/pages/home'),
+                    ],
+                    ['to' => site()->notifySubscriptions()->value()]
+                );
             }
 
             return Response::json(['ok' => true]);
@@ -98,6 +110,25 @@ return [
             if ($stored === false) {
                 return Response::json(['ok' => false, 'message' => 'No pudimos enviar tu mensaje, inténtalo más tarde.'], 500);
             }
+
+            framelab_notify(
+                'message',
+                'Mensaje de '.$name.($course !== '' ? ' · '.$course : ''),
+                [
+                    'name' => $name,
+                    'email' => $email,
+                    'course' => $course,
+                    'message' => $message,
+                    'date' => date('d/m/Y H:i'),
+                    'panel' => url('panel/pages/contacto'),
+                ],
+                [
+                    'to' => site()->notifyMessages()->value(),
+                    // Al responder el aviso se le contesta a quien escribió.
+                    'replyTo' => $email,
+                    'replyToName' => $name,
+                ]
+            );
 
             return Response::json(['ok' => true]);
         },

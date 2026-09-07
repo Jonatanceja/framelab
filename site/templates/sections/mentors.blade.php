@@ -8,6 +8,17 @@
     if ($mentors->isEmpty()) {
         $mentors = $page->children()->listed();
     }
+
+    // Con un solo mentor no hay bento que armar: la tarjeta conserva su tamaño
+    // (dos columnas si es destacada, una si no) y se centra en la retícula.
+    $single = $mentors->count() === 1;
+    $singleCard = $single ? $mentors->first()->card()->or('perfil')->value() : null;
+
+    $gridClass = match (true) {
+        $singleCard === 'destacado' => 'lg:mx-auto lg:w-2/3',
+        $single => 'lg:mx-auto lg:w-1/3',
+        default => 'lg:grid-cols-3',
+    };
 @endphp
 @if ($mentors->isNotEmpty())
     <section id="mentores" class="border-line bg-bg-soft relative border-y py-24 lg:py-32">
@@ -19,9 +30,9 @@
                 <p class="text-fg-muted mx-auto mt-5 leading-relaxed">{{ $page->mentorsText() }}</p>
             </div>
 
-            <div class="mt-14 grid gap-6 lg:grid-cols-3">
+            <div class="mt-14 grid gap-6 {{ $gridClass }}">
                 @foreach ($mentors as $mentor)
-                    @include('partials.mentor-card', ['mentor' => $mentor, 'index' => $loop->index])
+                    @include('partials.mentor-card', ['mentor' => $mentor, 'index' => $loop->index, 'single' => $single])
                 @endforeach
             </div>
         </div>

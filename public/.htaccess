@@ -54,4 +54,28 @@ AddOutputFilterByType DEFLATE text/javascript
 AddOutputFilterByType DEFLATE application/json
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Caché de estáticos.
+#
+# Los assets compilados y las miniaturas llevan un hash en el nombre, así
+# que pueden cachearse un año: cuando cambia el contenido, cambia la URL.
+# Las fuentes van aparte porque no llevan hash.
+<IfModule mod_expires.c>
+ExpiresActive On
+
+<FilesMatch "\.(woff2|woff|ttf|otf|eot)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+<FilesMatch "\.(css|js)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico|mp4|webm)$">
+    ExpiresDefault "access plus 6 months"
+</FilesMatch>
 </IfModule>

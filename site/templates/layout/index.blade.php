@@ -65,12 +65,11 @@
     @endif
 
     <link rel="icon" href="{{ url('/images/brand/frame-lab-iso.svg') }}" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    />
+
+    {{-- Tipografías propias: se precargan para que lleguen junto con el CSS
+         y no haya un salto de fuente al pintar. --}}
+    <link rel="preload" href="{{ url('/fonts/inter-var.woff2') }}" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="{{ url('/fonts/archivo-var.woff2') }}" as="font" type="font/woff2" crossorigin />
 
     <script>
         // Se aplica antes de pintar para que no haya parpadeo de tema.

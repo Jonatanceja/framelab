@@ -140,7 +140,7 @@ Deliverableslist:
 
 ----
 
-Instructor: page://mentorSrNino000001
+Instructor: - page://mentorSrNino000001
 
 ----
 
@@ -196,7 +196,7 @@ Ogdescription:
 
 ----
 
-Ogimage: 
+Ogimage: - file://inzkgqffgmmeuqbb
 
 ----
 

@@ -18,14 +18,7 @@ Storytext: Frame Lab nació de una necesidad: conectar el talento creativo de La
 
 ----
 
-Storystats:
-
-- 
-  value: "+500"
-  label: Alumnos graduados
-- 
-  value: '95%'
-  label: Empleabilidad
+Storystats: 
 
 ----
 
@@ -49,11 +42,7 @@ Mentorstext: Aprende directamente de profesionales activos en la industria. Nues
 
 ----
 
-Mentorslist:
-
-- page://mentorSrNino000001
-- page://mentorElenaVargas1
-- page://mentorJavierRuiz01
+Mentorslist: - page://mentorSrNino000001
 
 ----
 
@@ -119,7 +108,7 @@ Ogdescription:
 
 ----
 
-Ogimage: 
+Ogimage: - file://xczmqgwt0ybruqz2
 
 ----
 

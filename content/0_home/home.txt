@@ -144,13 +144,11 @@ Coursestext: Programas intensivos diseñados con expertos de la industria para l
 
 ----
 
-Courseslist:
-
-- page://cursoDisenoProduccion1
+Courseslist: - page://cursoDisenoProduccion1
 
 ----
 
-Testimonialsvisible: true
+Testimonialsvisible: false
 
 ----
 
@@ -206,7 +204,11 @@ Ctanote: Sin spam. Puedes darte de baja cuando quieras.
 
 ----
 
-Subscribers: 
+Subscribers:
+
+- 
+  date: 2026-09-05 20:35
+  email: jonatanjonas@gmail.com
 
 ----
 

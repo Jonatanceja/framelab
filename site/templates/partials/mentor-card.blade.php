@@ -8,6 +8,8 @@
     $image = $mentor->photo()->toFile();
     $video = $mentor->photoVideo()->toFile();
     $card = $mentor->card()->or('perfil')->value();
+    // Cuando es la única tarjeta la retícula ya la centra: no debe abarcar columnas.
+    $single = $single ?? false;
 
     $words = array_values(
         array_filter(preg_split('/\s+/u', trim($mentor->title()->value())), fn ($word) => preg_match('/^\p{L}/u', $word) === 1)
@@ -22,7 +24,7 @@
 
 <a
     href="{{ $mentor->url() }}"
-    class="card group flex flex-col {{ $card === 'destacado' ? 'lg:col-span-2 lg:row-span-2 min-h-[26rem] lg:min-h-[34rem]' : 'min-h-[15rem]' }}"
+    class="card group flex flex-col {{ $card === 'destacado' ? ($single ? 'min-h-[26rem] lg:min-h-[34rem]' : 'lg:col-span-2 lg:row-span-2 min-h-[26rem] lg:min-h-[34rem]') : 'min-h-[15rem]' }}"
     data-reveal
     style="--reveal-delay: {{ 100 * $index }}ms"
 >
